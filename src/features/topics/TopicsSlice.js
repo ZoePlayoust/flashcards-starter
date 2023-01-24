@@ -4,7 +4,8 @@ import Topics from "./Topics";
 const options = {
   name: "topics",
   initialState: {
-    topics: {}}
+    topics: {}
+  }
   ,
   reducers: {
     addTopic: (state, action) => {
