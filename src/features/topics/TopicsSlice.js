@@ -1,25 +1,27 @@
 import { createSlice } from "@reduxjs/toolkit";
+import Topics from "./Topics";
 
 const options = {
   name: "topics",
   initialState: {
-    topics: {'23596': {id: '23596', name: 'patata', icon: 'icon url', quizzIds: []}}}
+    topics: {}}
   ,
   reducers: {
     addTopic: (state, action) => {
       const { id, name, icon } = action.payload;
+     
       state.topics[id] = {
         id: id,
         name: name,
         icon: icon,
         quizIds: []
       };
+      
     },
     addQuizId: (state, action) =>{
       const quizId= action.payload.id;
       const topicId=action.payload.topicId;
- 
-      state.push( {quizIds: quizId});
+      state.topics[topicId].quizIds.push(quizId)
     },
    
   },

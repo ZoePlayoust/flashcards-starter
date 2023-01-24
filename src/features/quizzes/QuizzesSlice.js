@@ -1,5 +1,7 @@
 import { createSlice, } from "@reduxjs/toolkit";
 import { addQuizId } from "../topics/TopicsSlice";
+
+
 const options = {
     name: "quizzes",
     initialState: {
@@ -17,17 +19,17 @@ const options = {
       },
      
     },
+    
     // extra reducers here
   };
 
-  
-
   export const addQuizzForTopicId = (payload) => {
-    console.log("quizzesSlice", payload)
     return dispatch => {
-         dispatch(addQuiz(payload)).then(dispatch(addQuizId(payload)))}
+     const response =  Promise.resolve(dispatch(addQuiz(payload))).then(()=> dispatch(addQuizId(payload)));
+  return response
+    }}
 
-    }
+ 
   
   
 export const quizzesSlice = createSlice(options);
