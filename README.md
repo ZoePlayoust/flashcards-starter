@@ -1,4 +1,5 @@
 # Flashcards creator
+Link to video demo: [Click here](https://www.linkedin.com/posts/zo%C3%A9-playoust-467b68116_redux-ugcPost-7023653569916493824-Y41t?utm_source=share&utm_medium=member_desktop).
 
 # Table of contents
 1. [About The App](#About-The-App)
