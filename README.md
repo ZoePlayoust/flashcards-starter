@@ -14,13 +14,13 @@ Link to video demo: [Click here](https://www.linkedin.com/posts/zo%C3%A9-playous
 This app aim to create flipable flashcards, with content on both sides. You can store those flashcards by topic. 
 
 ## Technologies
-I used html, css, react, redux
+I used HTML, CSS, React, Redux
 
 ## To Run
 
-Download or clone the repository 
-run `npm install` in the project root
-Run `npm start` in the project root and the app will be available on port 3000.
+- Download or clone the repository 
+- Run `npm install` in the project root
+- Run `npm start` in the project root and the app will be available on `port 3000`.
 
 ## State
 
